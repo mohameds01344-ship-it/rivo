@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="RIVO STORE - Premium Streetwear For Everyone">
+
+    <title>RIVO STORE | Streetwear</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<body>
+
+    <!-- ANNOUNCEMENT BAR -->
+
+    <div class="announcement">
+
+        RIVO® — PREMIUM STREETWEAR FOR EVERYONE
+
+    </div>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="#" class="logo" onclick="showHome(); return false;">
+
+            <img src="images/logo.jpeg" alt="RIVO STORE">
+
+        </a>
+
+
+        <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+
+            ☰
+
+        </button>
+
+
+        <nav class="navigation" id="navigation">
+
+            <a href="#" onclick="showHome(); return false;">الرئيسية</a>
+
+            <a href="#shop" onclick="showHome();">الكولكشن</a>
+
+            <a href="#about" onclick="showHome();">عن RIVO</a>
+
+            <a href="#contact" onclick="showHome();">تواصل معنا</a>
+
+        </nav>
+
+
+        <a href="#shop" class="header-button" onclick="showHome();">
+
+            اكتشف الكولكشن ↙
+
+        </a>
+
+    </header>
+
+
+    <!-- MAIN WEBSITE -->
+
+    <main id="homePage">
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+
+                    NEW COLLECTION / DROP 001
+
+                </p>
+
+
+                <h1>
+
+                    مش مجرد هودي.
+
+                    <br>
+
+                    <span>دي شخصيتك.</span>
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    ستايل مختلف، طباعات جريئة، وتفاصيل بتعبّر عنك.
+
+                    اكتشف أول كولكشن من RIVO واختار القطعة اللي شبهك.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#shop" class="button button-black">
+
+                        تسوّق الكولكشن ↙
+
+                    </a>
+
+                    <a href="#about" class="button button-outline">
+
+                        اكتشف RIVO
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-features">
+
+                    <div>
+
+                        <strong>UNISEX</strong>
+
+                        <span>ستايل للجميع</span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>ORIGINAL</strong>
+
+                        <span>تصميمات مختلفة</span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong>RIVO®</strong>
+
+                        <span>Own Your Vibe</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="hero-sticker">
+
+                    YOUR VIBE
+
+                    <br>
+
+                    YOUR RULES.
+
+                </div>
+
+
+                <div class="hero-circle"></div>
+
+
+                <div class="hero-product">
+
+```
+<img
+    src="images/logo.jpeg"
+    alt="RIVO Hoodie"
+    class="hero-hoodie-image"
+>
+```
+
+</div>
+
+
+                        <div class="hoodie-sleeve sleeve-left"></div>
+
+                        <div class="hoodie-sleeve sleeve-right"></div>
+
+                    </div>
+
+                </div>
+
+
+                <span class="hero-number">001</span>
+
+                <span class="hero-caption">
+
+                    RIVO / EXPRESSION SERIES
+
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- MOVING TEXT -->
+
+        <div class="ticker">
+
+            <div class="ticker-track">
+
+                OWN YOUR VIBE ✳ NOT BASIC ✳ RIVO STREETWEAR ✳
+
+                YOUR STYLE YOUR RULES ✳ OWN YOUR VIBE ✳
+
+                NOT BASIC ✳ RIVO STREETWEAR ✳
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCTS SECTION -->
+
+        <section class="shop section" id="shop">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">THE FIRST DROP</p>
+
+                    <h2>
+
+                        اختار الـ
+
+                        <span>VIBE</span>
+
+                        بتاعك.
+
+                    </h2>
+
+                </div>
+
+
+                <p>
+
+                    اكتشف تصميمات RIVO الجديدة.
+
+                    <br>
+
+                    اضغط على أي منتج عشان تعرف تفاصيله.
+
+                </p>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="filters">
+
+                <button class="filter active" data-filter="all">
+
+                    كل المنتجات
+
+                </button>
+
+
+                <button class="filter" data-filter="graphic">
+
+                    Graphic
+
+                </button>
+
+
+                <button class="filter" data-filter="minimal">
+
+                    Minimal
+
+                </button>
+
+
+                <button class="filter" data-filter="oversized">
+
+                    Oversized
+
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTS WILL BE ADDED BY JAVASCRIPT -->
+
+            <div class="product-grid" id="productGrid"></div>
+
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+
+        <section class="about section" id="about">
+
+            <div class="about-content">
+
+                <p class="eyebrow">MORE THAN A HOODIE</p>
+
+
+                <h2>
+
+                    مش لازم تبقى
+
+                    <br>
+
+                    <span>زي أي حد.</span>
+
+                </h2>
+
+
+                <p>
+
+                    RIVO معمول للناس اللي بتحب تعبّر عن نفسها.
+
+                    ستريت وير شبابي، طباعات مختلفة، وتصميمات
+
+                    بتخليك تعمل ستايلك بطريقتك.
+
+                </p>
+
+
+                <a href="#shop" class="button button-white">
+
+                    اكتشف المنتجات ↙
+
+                </a>
+
+            </div>
+
+
+            <div class="about-watermark">
+
+                R.
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW TO ORDER -->
+
+        <section class="how-to section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">SIMPLE & EASY</p>
+
+                    <h2>
+
+                        اطلب في
+
+                        <span>3 خطوات.</span>
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="steps-grid">
+
+                <article class="step">
+
+                    <span>01</span>
+
+                    <h3>اختار الهودي</h3>
+
+                    <p>
+
+                        اكتشف الكولكشن واختار التصميم اللي عجبك.
+
+                    </p>
+
+                </article>
+
+
+                <article class="step">
+
+                    <span>02</span>
+
+                    <h3>حدد مقاسك</h3>
+
+                    <p>
+
+                        اختار اللون والمقاس والكمية واكتب بياناتك.
+
+                    </p>
+
+                </article>
+
+
+                <article class="step">
+
+                    <span>03</span>
+
+                    <h3>أكد الأوردر</h3>
+
+                    <p>
+
+                        ابعت تفاصيل طلبك على واتساب عشان نأكد معاك.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section class="contact section" id="contact">
+
+            <div>
+
+                <p class="eyebrow">YOUR NEXT FAVORITE HOODIE</p>
+
+                <h2>
+
+                    جاهز تعمل
+
+                    <span>DROP؟</span>
+
+                </h2>
+
+            </div>
+
+
+            <a href="#" class="button button-black" id="contactWhatsApp">
+
+                تواصل على واتساب ↗
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- PRODUCT DETAILS PAGE -->
+
+    <main id="productPage" class="hidden">
+
+        <section class="product-details">
+
+            <button class="back-button" onclick="showHome()">
+
+                → رجوع للكولكشن
+
+            </button>
+
+
+            <div class="details-layout">
+
+                <div class="details-image" id="detailsImage">
+
+                    <span class="details-badge">
+
+                        RIVO® ORIGINAL
+
+                    </span>
+
+
+                    <img id="productPhoto" src="" alt="صورة المنتج">
+
+
+                    <div class="product-placeholder" id="productPlaceholder">
+
+                        <div class="hoodie-shape">
+
+                            <div class="hoodie-hood"></div>
+
+                            <div class="hoodie-body">
+
+                                <span id="placeholderDesign">R.</span>
+
+                                <small>RIVO STREETWEAR</small>
+
+                            </div>
+
+                            <div class="hoodie-sleeve sleeve-left"></div>
+
+                            <div class="hoodie-sleeve sleeve-right"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="details-info">
+
+                    <p class="eyebrow" id="detailCategory">
+
+                        RIVO / STREETWEAR
+
+                    </p>
+
+
+                    <h1 id="detailName"></h1>
+
+
+                    <p class="detail-price" id="detailPrice"></p>
+
+
+                    <p class="detail-description" id="detailDescription"></p>
+
+
+                    <!-- COLORS -->
+
+                    <div class="option-group">
+
+                        <div class="option-heading">
+
+                            اللون
+
+                            <span id="selectedColorName"></span>
+
+                        </div>
+
+
+                        <div class="color-options" id="colorOptions"></div>
+
+                    </div>
+
+
+                    <!-- SIZES -->
+
+                    <div class="option-group">
+
+                        <div class="option-heading">
+
+                            المقاس
+
+                            <span id="selectedSizeName">اختار مقاسك</span>
+
+                        </div>
+
+
+                        <div class="size-options" id="sizeOptions"></div>
+
+
+                        <p class="size-note">
+
+                            اختار المقاس المناسب ليك قبل استكمال الطلب.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- QUANTITY -->
+
+                    <div class="option-group">
+
+                        <div class="option-heading">
+
+                            الكمية
+
+                        </div>
+
+
+                        <div class="quantity-control">
+
+                            <button id="minusQuantity" aria-label="تقليل الكمية">
+
+                                −
+
+                            </button>
+
+
+                            <span id="quantityValue">1</span>
+
+
+                            <button id="plusQuantity" aria-label="زيادة الكمية">
+
+                                +
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="button button-black add-to-order" id="continueOrder">
+
+                        كمّل بيانات الأوردر ↙
+
+                    </button>
+
+
+                    <div class="product-notes">
+
+                        <span>✳ UNISEX STYLE</span>
+
+                        <span>✳ RIVO ORIGINAL</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- CHECKOUT PAGE -->
+
+    <main id="checkoutPage" class="hidden">
+
+        <section class="checkout section">
+
+            <div class="checkout-heading">
+
+                <p class="eyebrow">YOUR ORDER / CHECKOUT</p>
+
+
+                <h1>
+
+                    خلينا نوصّل لك
+
+                    <span>الستايل.</span>
+
+                </h1>
+
+
+                <p>
+
+                    اكتب بياناتك بالتفصيل عشان نقدر نأكد طلبك.
+
+                </p>
+
+            </div>
+
+
+            <div class="checkout-layout">
+
+                <!-- CUSTOMER FORM -->
+
+                <form id="checkoutForm" class="checkout-form">
+
+                    <h2>بيانات العميل</h2>
+
+
+                    <div class="form-grid">
+
+                        <label>
+
+                            الاسم بالكامل *
+
+                            <input
+
+                                type="text"
+
+                                name="fullName"
+
+                                required
+
+                                autocomplete="name"
+
+                                placeholder="اكتب اسمك بالكامل"
+
+                            >
+
+                        </label>
+
+
+                        <label>
+
+                            رقم الموبايل *
+
+                            <input
+
+                                type="tel"
+
+                                name="phone"
+
+                                required
+
+                                autocomplete="tel"
+
+                                pattern="[0-9+() -]{8,20}"
+
+                                placeholder="01xxxxxxxxx"
+
+                            >
+
+                        </label>
+
+
+                        <label>
+
+                            رقم بديل
+
+                            <input
+
+                                type="tel"
+
+                                name="altPhone"
+
+                                placeholder="اختياري"
+
+                            >
+
+                        </label>
+
+
+                        <label>
+
+                            المحافظة *
+
+                            <select name="governorate" id="governorate" required>
+
+                                <option value="">اختار المحافظة</option>
+
+                            </select>
+
+                        </label>
+
+
+                        <label class="full-width">
+
+                            العنوان بالتفصيل *
+
+                            <textarea
+
+                                name="address"
+
+                                required
+
+                                rows="3"
+
+                                autocomplete="street-address"
+
+                                placeholder="المنطقة، الشارع، رقم العمارة، الدور والشقة"
+
+                            ></textarea>
+
+                        </label>
+
+
+                        <label>
+
+                            أقرب علامة مميزة *
+
+                            <input
+
+                                type="text"
+
+                                name="landmark"
+
+                                required
+
+                                placeholder="جنب إيه؟"
+
+                            >
+
+                        </label>
+
+
+                        <label>
+
+                            طريقة التواصل
+
+                            <select name="contactPreference">
+
+                                <option value="واتساب">واتساب</option>
+
+                                <option value="مكالمة">مكالمة هاتفية</option>
+
+                            </select>
+
+                        </label>
+
+
+                        <label class="full-width">
+
+                            ملاحظات إضافية
+
+                            <textarea
+
+                                name="notes"
+
+                                rows="2"
+
+                                placeholder="أي تفاصيل محتاج تقولها لنا"
+
+                            ></textarea>
+
+                        </label>
+
+                    </div>
+
+
+                    <label class="confirm-checkbox">
+
+                        <input type="checkbox" required>
+
+                        أأكد إن بياناتي صحيحة.
+
+                    </label>
+
+
+                    <button type="submit" class="button button-black submit-order">
+
+                        تأكيد الأوردر على واتساب ↗
+
+                    </button>
+
+
+                    <p class="form-note">
+
+                        هتفتح رسالة واتساب جاهزة ببياناتك.
+
+                        راجع الرسالة واضغط إرسال لتأكيد الطلب.
+
+                    </p>
+
+                </form>
+
+
+                <!-- ORDER SUMMARY -->
+
+                <aside class="order-summary">
+
+                    <p class="eyebrow">ORDER SUMMARY</p>
+
+
+                    <h2>ملخص الأوردر</h2>
+
+
+                    <div id="checkoutProduct"></div>
+
+
+                    <div class="summary-row">
+
+                        <span>سعر المنتجات</span>
+
+                        <strong id="checkoutSubtotal">—</strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>الشحن</span>
+
+                        <strong>يتحدد لاحقًا</strong>
+
+                    </div>
+
+
+                    <div class="summary-total">
+
+                        <span>الإجمالي المبدئي</span>
+
+                        <strong id="checkoutTotal">—</strong>
+
+                    </div>
+
+
+                    <p class="shipping-note">
+
+                        تكلفة الشحن النهائية هتتأكد معاك قبل تأكيد الأوردر.
+
+                    </p>
+
+
+                    <button class="edit-order" onclick="showHome()">
+
+                        + الرجوع للكولكشن
+
+                    </button>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <a href="#" class="footer-logo" onclick="showHome(); return false;">
+
+            RIVO<span>®</span>
+
+        </a>
+
+
+        <p>PREMIUM STREETWEAR FOR EVERYONE.</p>
+
+
+        <small>
+
+            © <span id="currentYear"></span> RIVO STORE
+
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
